@@ -1,0 +1,25 @@
+{
+  "name": "try-json"
+, "author": "Beau Sorensen <mail@beausorensen.com> (http://github.com/sorensen)"
+, "version": "0.0.1"
+, "license": "MIT"
+, "keywords": [
+    "safe", "json", "parse"
+  ]
+, "description": "Faster try/catch helper for JSON.parse"
+, "repository": {
+    "type": "git"
+  , "url": "git://github.com/sorensen/try-json.js.git"
+  }
+, "engines": {
+    "node": "0.x"
+  }
+, "main": "index.js"
+, "scripts": {
+    "test": "npm run hint && ./node_modules/mocha/bin/mocha -R spec test.js"
+  , "hint": "jshint index.js *.json"
+  }
+, "devDependencies": {
+    "mocha": "^2.1.0"
+  }
+}

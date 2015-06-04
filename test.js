@@ -15,7 +15,11 @@ describe('try-json', function() {
     ade(tryJSON('[1,2,3,4]'), [1, 2, 3, 4])
   })
 
+  it('valid null', function() {
+    ade(tryJSON('null'), null)
+  })
+
   it('invalid string', function() {
-    ade(tryJSON('woaaaaaa!'), null)
+    ade(tryJSON('woaaaaaa!'), undefined)
   })
 })

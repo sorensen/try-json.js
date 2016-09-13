@@ -13,15 +13,13 @@
     "type": "git",
     "url": "git://github.com/sorensen/try-json.js.git"
   },
-  "engines": {
-    "node": "0.x"
-  },
   "main": "index.js",
   "scripts": {
     "test": "npm run hint && ./node_modules/mocha/bin/mocha -R spec test.js",
     "hint": "jshint index.js *.json"
   },
   "devDependencies": {
+    "jshint": "^2.9.3",
     "mocha": "^2.1.0"
   }
 }
